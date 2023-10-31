@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "reverie_retrieval"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.8.10"
+ftfy = "^6.1.1"
+matplotlib = "^3.6.2"
+nltk = "^3.8.1"
+regex = "^2022.10.31"
+tqdm = "^4.64.1"
+torch = { url = "https://download.pytorch.org/whl/cu111/torch-1.10.1%2Bcu111-cp38-cp38-linux_x86_64.whl" }
+torchvision = { url = "https://download.pytorch.org/whl/cu111/torchvision-0.11.2%2Bcu111-cp38-cp38-linux_x86_64.whl" }
+wandb = "^0.13.7"
+uvicorn = "^0.20.0"
+fastapi = "^0.89.1"
+python-multipart = "^0.0.5"
+positional-encodings = {extras = ["pytorch"], version = "^6.0.1"}
+transformers = "^4.32.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.3.0"
+flake8 = "^4.0.1"
+flake8-docstrings = "^1.6.0"
+isort = "^5.10.1"
+mypy = "^0.950"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+target-version = ['py38']
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+python_version = "3.8"

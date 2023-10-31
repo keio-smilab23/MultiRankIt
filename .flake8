@@ -1,0 +1,22 @@
+[flake8]
+exclude =
+    .git
+    .venv
+    .pytest_cache
+    .mypy_cache
+    __pycache__
+# These rules conflict with black. Black doesn't cover some checks of flake8 for example unused import.
+# pysen (https://github.com/pfnet/pysen/blob/main/setup.cfg#L8) also ignore following.
+ignore =
+    # https://flake8.pycqa.org/en/latest/user/error-codes.html
+    # https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes
+    E203, # whitespace before ':'.
+    E231, # whitespace after ','.
+    E501, # line too long; Black prefer 120 characters(by config file), and we don't need double check.
+    W503, # line break before binary operator; This is a wellknown option. Plz search with the words "python W503 W504".
+    D104, # Missing docstring in public package; Docstring is required in even empty __init__.py.
+    D105, # Missing docstring in magic method; This requires docstring for built-in functions which return an explicit result.
+    D107, # Missing docstring in __init__; Docstring is required in __init__ function.
+    D200, # One-line docstring should fit on one line with quotes; To allow multi-line docstring written in a single-line comment.
+    D400  # First line should end with a period; Periods are required in docstring even when written in non-English languages.
+max-complexity = 31
