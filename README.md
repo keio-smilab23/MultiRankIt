@@ -1,4 +1,4 @@
-# PAPER TITLE
+# Learning-To-Rank Approach for Identifying Everyday Objects Using a Physical-World Search Engine
 
 [[paper]()]
 
@@ -37,8 +37,7 @@ success rate for object retrieval achieved 80%.
 
 ## Setup
 ```bash
-git clone XXX
-cd reverie_retrieval
+git clone https://github.com/keio-smilab23/MultiRankIt.git
 ./scripts/build_docker.sh
 ```
 
