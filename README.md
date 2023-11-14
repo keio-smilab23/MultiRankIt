@@ -75,8 +75,8 @@ We expect the directory structure to be the following:
 ./data
 ├── REVERIE_dataset
 |   ├── BBoxes_v2.json
-│   └── REVERIE_[train/val_seen/val_unseen/test].jsonBBoxes_v2.json
-|   `
+│   └── REVERIE_[train/val_seen/val_unseen/test].json
+|   
 └── EXTRACTED_IMGS_
     ├── 17DRP5sb8fy
     ├── 1LXtFkjw3qL
